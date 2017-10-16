@@ -4,6 +4,8 @@ import fontforge, psMat
 import math
 fontforge.printSetup("pdf-file")
 
+ITALIC_ANGLE = 6.25 # 12.5
+
 ## regular
 
 base_font = fontforge.open("sfd/14seg.sfd")
@@ -58,11 +60,11 @@ base_font = fontforge.open("sfd/14seg-gen.sfd")
 
 base_font.selection.all()
 
-matrix = psMat.skew(math.radians(12.5))
+matrix = psMat.skew(math.radians(ITALIC_ANGLE))
 
 base_font.transform(matrix)
 
-base_font.italicangle = -12.5
+base_font.italicangle = -ITALIC_ANGLE
 
 base_font.fullname = "LCD Display: 14 Segment (Italic)"
 
@@ -89,11 +91,11 @@ base_font = fontforge.open("sfd/14seg-condensed.sfd")
 
 base_font.selection.all()
 
-matrix = psMat.skew(math.radians(12.5))
+matrix = psMat.skew(math.radians(ITALIC_ANGLE))
 
 base_font.transform(matrix)
 
-base_font.italicangle = -12.5
+base_font.italicangle = -ITALIC_ANGLE
 
 base_font.fullname = "LCD Display: 14 Segment (Italic Condensed)"
 
