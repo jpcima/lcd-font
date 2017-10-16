@@ -17,6 +17,7 @@ base_font.fontname = "LCD14"
 base_font.save("sfd/14seg-gen.sfd")
 
 base_font.generate("otf/"+base_font.fontname+".otf")
+base_font.generate("ttf/"+base_font.fontname+".ttf")
 
 base_font.printSample("fontdisplay", 24, "", "specimens/"+base_font.fontname+".pdf")
 
@@ -43,6 +44,7 @@ base_font.os2_width = 3 # Condensed
 base_font.save("sfd/14seg-condensed.sfd")
 
 base_font.generate("otf/"+base_font.fontname+".otf")
+base_font.generate("ttf/"+base_font.fontname+".ttf")
 
 base_font.printSample("fontdisplay", 24, "", "specimens/"+base_font.fontname+".pdf")
 
@@ -71,6 +73,7 @@ base_font.os2_stylemap = 0b1000000001 # italic https://www.microsoft.com/typogra
 base_font.save("sfd/14seg-italic.sfd")
 
 base_font.generate("otf/"+base_font.fontname+".otf")
+base_font.generate("ttf/"+base_font.fontname+".ttf")
 
 base_font.unlinkReferences() # This works around a FontForge bug
 
@@ -103,6 +106,7 @@ base_font.os2_stylemap = 0b1000000001 # italic https://www.microsoft.com/typogra
 base_font.save("sfd/14seg-italiccondensed.sfd")
 
 base_font.generate("otf/"+base_font.fontname+".otf")
+base_font.generate("ttf/"+base_font.fontname+".ttf")
 
 base_font.unlinkReferences() # This works around a FontForge bug
 
